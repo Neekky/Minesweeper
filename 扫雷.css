@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    width: 100%;
+    height: 758px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url(./img/bg.jpg);
+    background-size: 100% 100%;
+}
+
+.btn{
+    height: 140px;
+    width:170px;
+    position: absolute;
+    left:50px;
+    background-image: url(./img/startGame.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.box{
+    height: 500px;
+    width:500px;
+    transform: perspective(1000px) rotateX(45deg);
+    margin:20px auto;
+    border: 1px solid #B25F27;
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.3);
+    display: none;
+    border-top:1px solid #b25f27; 
+    border-left:1px solid #b25f27; 
+}
+
+.flagBox{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 200px;
+    height: 50px;
+    margin-left: -100px;
+    color: #333;
+    font-size:  20px;
+    font-weight: bolder;
+    display: none;
+}
+
+.alertBox{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top:0;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.alertImg{
+    width: 600px;
+    height: 400px;
+    background-image: url("img/success.png");
+    background-size: 100% 100%;
+    /*绝对定位是相对于父容器中含有定位属性的元素进行定位
+    （直接父容器没有他会一层一层往上找，没有的话就相对body）。
+    一个DIV块的位置被定义为绝对定位的时候，也就意味着它失去了文档流的位置，
+    后面的文档流会紧跟着补上来接替它的位置。  */
+    position: absolute;
+    /*绝对定位的布局取决于三个因素，一个是元素的位置，一个是元素的尺寸，
+    一个是元素的margin值。
+    而没有设置尺寸和 margin 的元素会自适应剩余空间，位置固定则分配尺寸，
+    尺寸固定边会分配 margin，都是自适应的。*/
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 20px;
+    /*
+    position: relative;不会脱离文档流，position: fixed;position: absolute;会脱离文档流
+    position: relative; 相对于自己在文档流中的初始位置偏移定位。
+    position: fixed; 相对于浏览器窗口定位。
+    position: absolute; 是相对于父级非position:static 浏览器定位。 
+    如果没有任何一个父级元素是非position:static属性，则会相对于文档定位。
+    这里它的父级元素是包含爷爷级元素、祖爷爷级元素、祖宗十八代级元素的。任意一级都可以。
+    如果它的父级元素和爷爷级元素都是非position:static 属性，则，它会选择距离最近的父元素。
+    */
+}
+
+.close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 40px;
+    width:40px;
+    background-image: url("img/closeBtn.png");
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.block{
+    width:49px;
+    height: 49px;
+    border-right:1px solid #b25f27; 
+    border-bottom:1px solid #b25f27; 
+    /* box-shadow语法
+    box-shadow: h-shadow v-shadow blur spread color inset;
+
+    h-shadow：必须。水平阴影的位置。允许负值。
+    v-shadow：必须。垂直阴影的位置。允许负值。
+    blur：可选。模糊距离。
+    spread：可选。阴影的尺寸。
+    color：可选。阴影的颜色。请参阅 CSS 颜色值。
+    inset：可选。将外部阴影 (outset) 改为内部阴影。
+    */
+    box-shadow: 0 0 4px #333;
+    background-image: url("img/cao.jpg");
+    float: left;
+    /* display: inline-block;
+    margin-top: -3.6px;  */
+}
+
+.show{
+    background-image: url("img/dilei.jpg");
+    background-size: 100% 100%;
+}
+
+.num{
+    background: bisque;
+    font-size:18px;
+    font-weight: bolder;
+    line-height: 49px;
+    text-align: center;
+}
+
+.flag{
+    background-image:url('img/hongqi.jpg');
+    background-size:100% 100%;
+}
