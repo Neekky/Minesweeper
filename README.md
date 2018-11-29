@@ -1,5 +1,7 @@
-����һ������JavaScript������ɨ����Ϸ��
-�����С��Ϸ�Ĺ����У���ǰ����ѧϰ��HTML��CSS��JavaScript��ǿ������֪��
-�����Ϸ����Ҫ֪ʶ��Ϊ��DOMѡ������������¼���������װ����� ��CSS3�����ԡ�
+这是一个基于JavaScript开发的扫雷游戏，
+做这个小游戏的过程中，对前面所学习的HTML、CSS、JavaScript等强化了认知。
+通过对类名、for循环的灵活运用，完成了扫雷游戏的核心算法。
+这个游戏的主要知识点为：DOM选择器、鼠标点击事件、函数封装与调用 及CSS3新特性。
+
 
 
